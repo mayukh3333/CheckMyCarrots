@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Check My Carrots</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='123.png') }}"/>
+    <!--<link rel="stylesheet" href="style.css">-->
+
+</head>
+<!--<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+</style>-->
+<body>
+    <div class="login">
+        <h1>Check My Carrots...</h1>
+
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="form-control">
+                <input type="text" name="news" placeholder="Enter Link" required="required" />
+                <button type="submit" class="btn btn-primary btn-block btn-large">Enter</button>
+            </div>
+        </form>
+        <div class="image">
+            <img src="{{url_for('static', filename='28958357.png')}}" alt="carrot">
+        </div>
+
+        <br>
+        <br>
+        <div>
+            {{ prediction_text }}
+        </div>
+
+        <div style="margin-top: 20px;">
+            <p><b>What is this thing?</b><br> This artificial intelligence can predict whether a news article is fake or real based on the words used in the article.
+            </p>
+            <p><b>What do I do?</b><br> Enter a URL in the box above, the bot will load the article, extract the visible text, and use 3 different AI models to make a prediction of whether the article is fake or real. This may take several seconds because
+                the URL you enter has to be loaded and processed.
+            </p>
+            <p><b>Any article I want?</b> <br> The model has been trained only on political news. Anything outside of that domain is unlikely to produce credible results. Bot will not load articles from Bloomberg.com because of their robots.txt policy.
+            </p>
+            <p>
+                I have more questions, comments, and concern Email me <a href="mailto:mayukhdewan@gmail.com">here</a>
+            </p>
+        </div>
+
+        <!--<div class = 'footer'>-->
+        <div><style>.heart{color:#e25555;}</style>Made with <span class="heart">❤</span> by Mayukh Dewan</div>
+
+    </div>
+
+
+</body>
+
+</html>

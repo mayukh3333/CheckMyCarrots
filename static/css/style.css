@@ -1,0 +1,85 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background-color: #FBF5ED;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #FF9505;
+}
+
+a:hover {
+    color: #d19644;
+}
+
+.login {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+form {
+    width: 90%;
+}
+
+.form-control {
+    width: 100%;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 0.5px solid #767676;
+    box-sizing: border-box;
+    border-radius: 32px;
+    height: 50px;
+    padding-left: 50px;
+    position: absolute;
+}
+
+button {
+    position: absolute;
+    right: 1px;
+    width: 180px;
+    height: 49px;
+    background: #FF9505;
+    border: 0.5px solid #FF9505;
+    border-radius: 32px;
+    font-size: 20px;
+}
+
+.image img{
+    margin-top: 100px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+@media screen and (max-width:999.888px) {
+    input {
+        height: 30px;
+        padding-left: 30px;
+    }
+    button {
+        width: 90px;
+        height: 29px;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
