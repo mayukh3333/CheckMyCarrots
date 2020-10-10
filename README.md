@@ -20,6 +20,7 @@ This project has four major parts :
 # Algo Selection
 
 Used various machine learning algorithms to figure out the most optimial one for our problem the accuracy scores for each algorithm are below and check the jupyter notebook for implementations.
+
 <img src="images/score.png">
 
 
