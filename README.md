@@ -17,3 +17,9 @@ This project has four major parts :
 * static - This folder contains the CSS file.
 * requirements.txt - It contains the list of libraries required to run the heroku app
 
+# Algo Selection
+
+Used various machine learning algorithms to figure out the most optimial one for our problem the accuracy scores for each algorithm are below and check the jupyter notebook for implementations.
+<img src="images/scores.png">
+
+
