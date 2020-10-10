@@ -1,6 +1,5 @@
 # CheckMyCarrots
 
-# Checkout the app on this [link](http://checkmycarrots.online)
 <img src="images/app.png">
 
 # Introduction
